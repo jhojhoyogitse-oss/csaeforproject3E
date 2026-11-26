@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baccuit NHS Connect | School Information and Announcement Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+  <link rel="icon" href="logo.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <!-- Top right: theme button -->
+  <div class="topbar" id="topbar">
+    <button type="button" class="top-btn theme" id="themeToggle">Light</button>
+  </div>
+
+  <!-- Home page: Baccuit National High School -->
+  <div id="portal">
+    <header>
+      <div class="brand">
+        <img src="logo.png" alt="Baccuit National High School logo" width="56" height="56">
+        <h1>Baccuit NHS Connect <span class="sub">School Information and Announcement Portal</span></h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          <li><a href="#post">Post</a></li>
+          <li><a href="#notices">Notices</a></li>
+          <li><a href="#deadlines">Calendar</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="welcome">
+        <h2>Welcome to Baccuit National High School</h2>
+        <p>Your source of school announcements, notices and updates. Baccuit Sur, Bauang, La Union.</p>
+      </section>
+
+      <section id="post">
+        <h2>Post a notice</h2>
+        <form id="notice-form" class="post-form">
+          <label>Title
+            <input id="n-title" type="text" maxlength="60" required placeholder="e.g. Intramurals schedule">
+          </label>
+          <label>Category
+            <select id="n-cat">
+              <option value="general|General Announcement">General Announcement</option>
+              <option value="suspension|Class Suspension">Class Suspension</option>
+              <option value="enrollment|Enrollment">Enrollment</option>
+              <option value="academic|Academic Updates">Academic Updates</option>
+              <option value="activities|School Activities">School Activities</option>
+              <option value="events|Events and Celebrations">Events and Celebrations</option>
+              <option value="advisory|Advisory">Advisory</option>
+              <option value="emergency|Emergency Notice">Emergency Notice</option>
+            </select>
+          </label>
+          <label class="wide">Message
+            <textarea id="n-msg" rows="3" maxlength="200" required placeholder="Write the notice here"></textarea>
+          </label>
+          <div class="post-actions">
+            <button type="submit">Post notice</button>
+            <button type="button" id="n-clear" class="secondary">Remove my posts</button>
+          </div>
+        </form>
+        <p class="sample-note">Posted notices are saved only in your own browser (demo). Other visitors will not see them.</p>
+      </section>
+
+      <section id="notices">
+        <h2>Latest notices</h2>
+        <div class="notices">
+          <article class="notice pinned enrollment">
+            <span class="tag">Pinned &middot; Enrollment</span>
+            <h3>Late enrollment is open</h3>
+            <p>Late enrollment is open until Friday at the school office. Bring your documents.</p>
+            <small>Posted Nov 20, 2026</small>
+          </article>
+          <article class="notice academic">
+            <span class="tag">Academic Updates</span>
+            <h3>Periodical exam schedule</h3>
+            <p>The examination schedule will be posted here and on the school bulletin board.</p>
+            <small>Posted Nov 19, 2026</small>
+          </article>
+          <article class="notice activities">
+            <span class="tag">School Activities</span>
+            <h3>Intramurals practice</h3>
+            <p>Teams practice after classes this week. Check with your adviser for the schedule.</p>
+            <small>Posted Nov 18, 2026</small>
+          </article>
+          <article class="notice advisory">
+            <span class="tag">Advisory</span>
+            <h3>Reminder for students and parents</h3>
+            <p>Please wear the complete uniform and bring your school ID every day.</p>
+            <small>Posted Nov 17, 2026</small>
+          </article>
+          <article class="notice suspension">
+            <span class="tag">Class Suspension</span>
+            <h3>Class suspension notices</h3>
+            <p>When classes are suspended, the announcement will appear here first.</p>
+            <small>Posted Nov 16, 2026</small>
+          </article>
+          <article class="notice events">
+            <span class="tag">Events and Celebrations</span>
+            <h3>Recognition ceremony</h3>
+            <p>Honor students will be recognized at the end of the grading period.</p>
+            <small>Posted Nov 15, 2026</small>
+          </article>
+          <article class="notice general">
+            <span class="tag">General Announcement</span>
+            <h3>Update your contact details</h3>
+            <p>Please give your adviser your updated address and contact number.</p>
+            <small>Posted Nov 14, 2026</small>
+          </article>
+        </div>
+        <p class="sample-note">Sample notices for a class project, not actual school announcements.</p>
+      </section>
+
+      <section id="about">
+        <h2>About the school</h2>
+        <p>Baccuit National High School is a public secondary school in Baccuit Sur, Bauang, La Union. It belongs to the Schools Division of La Union, Bauang North district, in Region I (Ilocos Region).</p>
+
+        <ul class="stats">
+          <li class="stat"><strong>652</strong> learners</li>
+          <li class="stat"><strong>25</strong> teachers</li>
+          <li class="stat"><strong>6</strong> non-teaching staff</li>
+          <li class="stat"><strong>14</strong> classrooms</li>
+        </ul>
+
+        <h3>Programs</h3>
+        <p>Junior High School (Grades 7 to 10) and Senior High School (Grades 11 to 12). The Technical-Vocational-Livelihood (TVL) track is recorded in the school year 2024&ndash;2025 data, with 134 Senior High School learners.</p>
+
+        <h3>Enrollment by grade level, SY 2024&ndash;2025</h3>
+        <table>
+          <thead>
+            <tr><th>Grade</th><th>Male</th><th>Female</th><th>Total</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Grade 7</td><td>90</td><td>78</td><td>168</td></tr>
+            <tr><td>Grade 8</td><td>45</td><td>58</td><td>103</td></tr>
+            <tr><td>Grade 9</td><td>60</td><td>56</td><td>116</td></tr>
+            <tr><td>Grade 10</td><td>65</td><td>66</td><td>131</td></tr>
+            <tr><td>Grade 11</td><td>44</td><td>31</td><td>75</td></tr>
+            <tr><td>Grade 12</td><td>39</td><td>20</td><td>59</td></tr>
+            <tr class="total"><td>Total</td><td>343</td><td>309</td><td>652</td></tr>
+          </tbody>
+        </table>
+        <p class="sample-note">Figures are from public school data for SY 2024&ndash;2025 (DepEd School ID 300094). Confirm current numbers and offerings with the school.</p>
+      </section>
+
+      <section id="facilities">
+        <h2>School facilities</h2>
+        <ul class="facilities">
+          <li>14 classrooms</li>
+          <li>Computer room with 71 functional computers</li>
+          <li>Clinic</li>
+          <li>School offices</li>
+          <li>Playground</li>
+          <li>School garden</li>
+          <li>Supply room</li>
+          <li>13 toilets</li>
+          <li>Water supply</li>
+          <li>Electricity (grid supply)</li>
+          <li>Internet access</li>
+        </ul>
+      </section>
+    </main>
+
+    <aside id="deadlines">
+      <h2>Calendar</h2>
+      <table>
+        <thead>
+          <tr><th>Item</th><th>Date</th><th>Office</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Late enrollment</td><td>Nov 27</td><td>School office</td></tr>
+          <tr><td>Scholarship renewal</td><td>Dec 4</td><td>School office</td></tr>
+          <tr><td>Contest sign-up</td><td>Dec 8</td><td>Computer room</td></tr>
+        </tbody>
+      </table>
+      <p class="sample-note">Sample dates for a class project.</p>
+
+    </aside>
+
+    <footer id="contact">
+      <p>Baccuit National High School &middot; Baccuit Sur, Bauang, La Union &middot; DepEd School ID 300094</p>
+      <p>Contact number and email: to be provided by the school. CSAE 104 Web Programming class project.</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
